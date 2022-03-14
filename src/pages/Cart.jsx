@@ -243,7 +243,7 @@ const Cart = () => {
         </Top>
         <Bottom>
           <Info>
-            {cart.products.map((product) => {
+            {cart.products?.map((product) => {
               const quantity = product.quantity
               return ( 
               <Product style={{ marginBottom: '25px' }}>
