@@ -66,6 +66,10 @@ const Error = styled.span`
   color: red;
 `;
 
+const Text = styled.p`
+
+`;
+
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -99,6 +103,12 @@ const Login = () => {
             {/* <Link>
               <Linked>DO YOU NOT REMEMBER YOUR PASSWORD?</Linked>
             </Link> */}
+            <Text>You can login with this account <br/>
+              USERNAME : guest <br/>
+              PASSWORD : 123456 <br/>
+              or you can create a new account
+            </Text>
+            
             <Link to={"/register"}>
               <Linked>CREATE A NEW ACCOUNT</Linked>
             </Link>
