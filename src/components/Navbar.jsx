@@ -55,7 +55,11 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  ${mobile({ fontSize: '24px' })}
+  ${mobile({ display: "none" })}
+`;
+
+const ImgLogo = styled.div`
+
 `;
 const Right = styled.div`
   flex: 1;
@@ -96,9 +100,9 @@ const Navbar = () => {
             <Input placeholder="Search" />
             <Search style={{ color: 'gray', fontSize: 16 }} />
           </SearchContainer> */}
-          <Logo>
+          <ImgLogo>
             <img style={{ width: '45px' }} src={IMG} alt="" />
-          </Logo>
+          </ImgLogo>
         </Left>
         <Center>
           <Link style={{ textDecoration: 'none', color: 'black' }} to={'/'}>
